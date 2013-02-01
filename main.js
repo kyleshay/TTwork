@@ -17,6 +17,7 @@ javascript:(
           
           // This is the handler (what to do if we click the 'WorkMode' button)
           .live('click', function(){
+            
             // This is the code that hides/shows the game-looking stuff
             $('#stage-background,#dj-booth,#dj-table,#audience,'+
             '#awesome-meter,#songboard,#header>.logo,#header>.info').toggle()
