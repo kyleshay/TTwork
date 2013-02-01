@@ -1,0 +1,1 @@
+javascript:(function(){if(!$('#settings-dropdown > .work').length)$('#settings-dropdown').prepend($(document.createElement('li')).addClass('option work').text('WorkMode').live('click', function(){$('#stage-background,#dj-booth,#dj-table,#audience,#awesome-meter,#songboard,#header > .logo,#header > .info').toggle()}).click()); else $('#settings-dropdown > .work').click()})();
