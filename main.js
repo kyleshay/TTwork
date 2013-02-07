@@ -19,13 +19,13 @@ javascript:(
           .live('click',function(){
             
             // This is the code that hides/shows the game-looking stuff.
-            $('#stage-background,#dj-booth,#dj-table,#audience,'+
+            $('#stage-background,#dj-booth,#dj-table,#audience,#footer,'+
             '#awesome-meter,#songboard,#board,#header>.logo,#header>.info').toggle();
 
             // The rate buttongs are moved around to make things look prettier.
             var v=$('#board').is(':visible');
             $('#header').css({background:v?'':'none'});
-            console.log('test:' + v);
+            $('.floating-panel-tab').css({background:'':'white'})
             $('#lame-button').css({left:v?9:20,top:v?6:0});
             $('#awesome-button').css({right:v?9:20,top:v?6:0});
 
