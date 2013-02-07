@@ -24,6 +24,7 @@ javascript:(
 
             // The rate buttongs are moved around to make things look prettier.
             var v=$('#board').is(':visible');
+            $('#header').css({background:v?'':'none'})
             $('#lame-button').css({left:v?9:20,top:v?6:0});
             $('#awesome-button').css({right:v?9:20,top:v?6:0});
 
