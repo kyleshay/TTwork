@@ -26,7 +26,7 @@ javascript:(
             var v=$('#board').is(':visible');
             $('#lame-button').css({left:v?9:20,top:v?6:0});
             $('#awesome-button').css({right:v?9:20,top:v?6:0});
-            $('#songboard').css({background:v?none:
+            $('#songboard').css({background:v?'none':
               'url(https://s3.amazonaws.com/assets.turntable.fm/images/room/'+
               'board-sprite-0.png) 0 -102px no-repeat',top:v?0:6});
 
