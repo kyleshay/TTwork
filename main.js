@@ -20,16 +20,14 @@ javascript:(
             
             // This is the code that hides/shows the game-looking stuff.
             $('#stage-background,#dj-booth,#dj-table,#audience,'+
-             '#awesome-meter,#board,#header>.logo,#header>.info'+
-             '.zoom-0 #songboard:before, .zoom-0 #songboard:after').toggle();
+            '#awesome-meter,#board,#header>.logo,#header>.info').toggle();
 
             // The rate buttongs are moved around to make things look prettier.
             var v=$('#board').is(':visible');
             $('#lame-button').css({left:v?9:20,top:v?6:0});
             $('#awesome-button').css({right:v?9:20,top:v?6:0});
-            $('#songboard').css({background:v?'none':
-              'url(https://s3.amazonaws.com/assets.turntable.fm/images/room/'+
-              'board-sprite-0.png) 0 -102px no-repeat',top:v?0:6});
+            $('#songboard,#header').css({background:v?'':'none'})
+            $('#songboard').css({top:v?6:0})
 
           // I call click here, so that the first time you click the bookmark
           // it will hide everything.
