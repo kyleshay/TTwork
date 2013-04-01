@@ -20,8 +20,10 @@ javascript:(
             
             // This is the code that hides/shows the game-looking stuff.
             $('#stage-background,#dj-booth,#dj-table,#audience,'+
-            '#awesome-meter,#board,#header>.logo,#header>.info,'+
-            '#left-screen,#right-screen,#curtain').toggle();
+            '#awesome-meter,#board,#header>.logo,#header>.info').toggle();
+            
+            // Remove gifs permanently... it's ok.
+            $('#left-screen,#right-screen,#curtain').remove();
 
             // The rate buttongs are moved around to make things look prettier.
             var v=$('#board').is(':visible');
