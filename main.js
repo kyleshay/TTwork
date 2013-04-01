@@ -23,7 +23,7 @@ javascript:(
             '#awesome-meter,#board,#header>.logo,#header>.info').toggle();
             
             // Remove gifs permanently... it's ok.
-            $('#left-screen,#right-screen,#curtain').remove();
+            $('.screen').remove();
 
             // The rate buttongs are moved around to make things look prettier.
             var v=$('#board').is(':visible');
