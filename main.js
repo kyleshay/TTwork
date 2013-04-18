@@ -3,7 +3,7 @@ javascript:(
     // check to see if the 'WorkMode' button has been added.
     if(!$('#settings-dropdown>.work').length) 
     
-      // it hasn't been added, so lets 'prepend' (add it to the beginning) it to the menu.
+      // it hasn't been added, so lets 'prepend' it to (add it to the beginning of) the menu.
       $('#settings-dropdown').prepend(
         
         // create the new menu item
@@ -19,13 +19,13 @@ javascript:(
           .live('click',function(){
             
             // This is the code that hides/shows the game-looking stuff.
-            $('#stage-background,#dj-booth,#dj-table,#audience,'+
-            '#awesome-meter,#board,#header>.logo,#header>.info').toggle();
+            $('#stage-background,#dj-booth,#dj-table,#audience, '+
+              '#awesome-meter,#board,#header>.logo,#header>.info').toggle();
             
             // Remove gifs permanently... it's ok.
             $('.screen').remove();
 
-            // The rate buttongs are moved around to make things look prettier.
+            // The rate buttons are moved around to make things look prettier.
             var v=$('#board').is(':visible');
             $('#lame-button').css({left:v?9:20,top:v?6:0});
             $('#awesome-button').css({right:v?9:20,top:v?6:0});
