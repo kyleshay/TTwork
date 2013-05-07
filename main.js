@@ -26,7 +26,7 @@ javascript:(
             $($('#room-view').find('canvas')).toggle();
             
             // always show the people.
-            $($('#room-view').find('canvas')[0]).toggle();
+            $($('#room-view').find('canvas')[1]).toggle();
             
             // Remove gifs permanently... it's ok.
             $('.screen').remove();
