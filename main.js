@@ -23,7 +23,7 @@ javascript:(
               '#point-display,#header>.logo,#header>.info').toggle();
               
             // Turntable X support
-            if(!!$('#ttx-panels')) $('#header>.info').show();
+            if($('#ttx-panels').length) $('#header>.info').show();
               
             // hide the stage stuff.
             $($('#room-view').find('canvas')).toggle();
