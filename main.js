@@ -19,8 +19,8 @@ javascript:(
           .live('click',function(){
             
             // This is the code that hides/shows the game-looking stuff.
-            $('#camera-control,#awesome-meter,#awesome-needle'+
-              '#header>.logo,#header>.info').toggle();
+            $('#camera-control,#awesome-meter,#awesome-needle,'+
+              '#point-display,#header>.logo,#header>.info').toggle();
               
             // hide the stage stuff.
             $($('#room-view').find('canvas')).toggle();
