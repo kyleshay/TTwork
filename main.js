@@ -22,6 +22,9 @@ javascript:(
             $('#camera-control,#awesome-meter,#awesome-needle,'+
               '#point-display,#header>.logo,#header>.info').toggle();
               
+            // Turntable X support
+            if($('#ttx-panels')) $('#header>.info').show();
+              
             // hide the stage stuff.
             $($('#room-view').find('canvas')).toggle();
             
