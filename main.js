@@ -19,8 +19,14 @@ javascript:(
           .live('click',function(){
             
             // This is the code that hides/shows the game-looking stuff.
-            $('#stage-background,#dj-booth,#dj-table,#audience, '+
-              '#awesome-meter,#board,#header>.logo,#header>.info').toggle();
+            $('#camera-control,#awesome-meter,#awesome-needle,'+
+              '#point-display,#header>.logo,#header>.info').toggle();
+              
+            // hide the stage stuff.
+            $($('#room-view').find('canvas')).toggle();
+            
+            // always show the people.
+            $($('#room-view').find('canvas')[1]).toggle();
             
             // Remove gifs permanently... it's ok.
             $('.screen').remove();
@@ -29,8 +35,9 @@ javascript:(
             var v=$('#board').is(':visible');
             $('#lame-button').css({left:v?9:20,top:v?6:0});
             $('#awesome-button').css({right:v?9:20,top:v?6:0});
-            $('#songboard,#header').css({background:v?'':'none'})
+            $('#songboard,#header,#board').css({background:v?'':'none'})
             $('#songboard').css({top:v?6:0})
+            
 
           // I call click here, so that the first time you click the bookmark
           // it will hide everything.
