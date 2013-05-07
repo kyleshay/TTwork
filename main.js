@@ -1,5 +1,5 @@
 javascript:(
-  function(){
+  function() {
     // check to see if the 'WorkMode' button has been added.
     if(!$('#settings-dropdown>.work').length) 
     
@@ -27,17 +27,14 @@ javascript:(
             
             // always show the people.
             $($('#room-view').find('canvas')[1]).toggle();
-            
-            // Remove gifs permanently... it's ok.
-            $('.screen').remove();
 
             // The rate buttons are moved around to make things look prettier.
-            var v=$('#board').is(':visible');
-            $('#lame-button').css({left:v?9:20,top:v?6:0});
-            $('#awesome-button').css({right:v?9:20,top:v?6:0});
-            $('#songboard,#header,#board').css({background:v?'':'none'})
-            $('#songboard').css({top:v?6:0})
-            
+            var v=$('#header>.logo').is(':visible');
+            $('#lame-button').css({left:v?14:33});
+            $('#awesome-button').css({left:v?453:433});
+            $('#header').css({'background':v?'':'none'});          
+            $('#board').css('background-image', v?'url(http://turntable.fm/'+
+              'roommanager_assets/concert-scene/zoom-0/board.png)':'none');
 
           // I call click here, so that the first time you click the bookmark
           // it will hide everything.
