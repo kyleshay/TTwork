@@ -25,6 +25,9 @@ javascript:(
             // hide the stage stuff.
             $($('#room-view').find('canvas')).toggle();
             
+            // always show the people.
+            $($('#room-view').find('canvas')[0]).toggle();
+            
             // Remove gifs permanently... it's ok.
             $('.screen').remove();
 
