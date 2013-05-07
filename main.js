@@ -13,7 +13,7 @@ javascript:(
           .addClass('option work')
           
           // make the text say 'WorkMode' so we know what button it is.
-          .text('WorkMode')
+          .text('Work mode')
           
           // This is the handler (what to do if we click the 'WorkMode' button)
           .live('click',function(){
