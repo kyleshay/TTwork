@@ -20,7 +20,7 @@ javascript:(
             
             // This is the code that hides/shows the game-looking stuff.
             $('#camera-control,#awesome-meter,#awesome-needle,'+
-              '#point-display,#header>.logo,#header>.info').toggle();
+              '#point-display,#header>.logo,#header>.info,#footer').toggle();
               
             // Turntable X support
             if($('#ttx-panels').length) $('#header>.info').show();
